@@ -1,0 +1,13 @@
+<div class="info-form-panel-container">
+    <tabs [closable]="hideEl" (delClosable)="delClosable($event)">
+        <tab tabTitle="СРОЧНЫЕ" (hide)="hide($event)">
+            <personal-info></personal-info>
+        </tab>
+        <tab tabTitle="НЕСРОЧНЫЕ" (hide)="hide($event)">
+            <income-info></income-info>
+        </tab>
+        <tab tabTitle="СПАМ" (hide)="hide($event)">
+            <investment-info></investment-info>
+        </tab>
+    </tabs>
+</div>

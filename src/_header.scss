@@ -1,0 +1,27 @@
+$colorHbg: #F9A20B;
+$colorHT1: white;
+
+@mixin bgCol($col){
+    background-color: $col;
+}
+header{
+    @extend .header-grid;
+    @include bgCol($colorHbg);
+    border-radius: 0 0 10px 10px; 
+    color:$colorHT1;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+	opacity: 0.9;
+    div {
+        justify-content: center;
+        align-self: center;
+    }
+    .logotype p{
+        font:32px Berlin Sans FB;
+        margin-top:0px;
+    }
+    .home p, .about p, .blog p{
+        font: bold 20px Segoe Print;
+    }
+}
